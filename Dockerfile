@@ -1,4 +1,4 @@
-FROM tomcat:9-jdk8-corretto
+FROM tomcat:9.0
 RUN apt-get update
 ENV TZ=Europe/Moscow
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
